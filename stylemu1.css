@@ -1,0 +1,271 @@
+
+body {
+  
+  margin: 0;
+  font-family: Arial, Helvetica, sans-serif;
+  background-color: rgb(52, 192, 178);
+}
+
+.topnav {
+  margin-top: 30px;
+  overflow: hidden;
+  background-color: goldenrod;
+  padding: 2px;
+}
+
+.topnav a {
+  float: left;
+  color: #f2f2f2;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 17px;
+}
+
+.topnav a:hover {
+  background-color: #ddd;
+  color: black;
+}
+
+.topnav a.active {
+  background-color: rgb(197, 194, 194);
+  color: white;
+}
+
+.topnav-right {
+  float: right;
+  margin-right: 50px;
+  padding-right: 20;
+}
+/*-------bellow about access/sign-in or signup page----------*/
+#mid-access{
+  width: 480px;
+  height: 450px;
+  float:left;
+  padding-left: 120px;
+  padding-top: 70px;
+  /*border: 1px double white;
+  background: linear-gradient(to bottom, #33ccff 0%, #ff99cc 100%) ;*/
+}
+.backg-full{
+  background-image: url("images/musicpic5.jpg");
+  height: 500px;
+  padding: 0px;
+  border-radius: 3px;
+  margin-top:0;
+  background-repeat: no-repeat;
+  width: 500px;
+  float: left;
+}
+
+#home-container{
+  width:1100px;
+  height:auto;
+}
+#form-container{
+  margin-left:150px;
+  width:700px;
+  padding: 5%;
+  
+}
+
+#login-music{
+  position: fixed;
+  border:1px double white;
+  padding:20px;
+  top:150px;
+  left:80%;
+  width:250px;
+  
+}
+#form-container-info{
+  width:auto;
+  float: left;
+  background-color: transparent;
+  padding: 5%;
+
+}
+.backg-full2{
+  background-image: url("images/musicpic_1.png");
+  height: 900px;
+  padding: 0;
+  border-radius: 3px;
+  margin-top:0;
+  background-repeat: no-repeat;
+  width: 1200px;
+  float: left;
+}
+.head1{
+  color:rgb(250, 245, 245);
+  font-family:  'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+  text-shadow: 1px 5px rgb(48, 56, 48);
+  font-size: 40px;
+  padding:2px;
+  margin-left: 200px;
+}
+#pp1{
+  padding: 200px;
+}
+
+#cont1-serv {
+  padding-top: 30px
+}
+#cont2-serv {
+  align-self: right;
+}
+#message-home{
+  top:150px;
+  left:700px;
+  position: absolute;
+  width:500px;
+  height:100px;
+
+}
+#h3-home{
+ color:white;
+ font-family: Georgia, 'Times New Roman', Times, serif;
+ text-shadow: 1px 5px rgb(48, 56, 48);
+}
+
+/*---about page style----*/
+#main-body-about{
+  padding:40px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin:auto;
+  width:auto;
+}
+#about-body{
+  width: 800px;
+  height: auto;
+  position: absolute;
+  top: 40%;
+  left: 30%;
+  margin-right: -50%;
+  transform: translate(-50%, -50%)
+}
+#about-div1{
+  width:40%;
+  padding: 20px;
+  float:left;
+}
+#about-div2{
+  width:40%;
+  padding: 10px;
+  float:right;
+}
+#p-about{
+  font-size: 30px;
+  font-style: normal;
+  font-family: 'Times New Roman', Times, serif;
+}
+/*----end about page------*/
+
+/*----this is about last page----*/
+#last-main-container{
+  padding-left:150px;
+  padding-top:25px;
+  align-items: center;
+  width:1250px;
+  min-height:auto;
+}
+#middle{
+  width: 400px;
+  height: 250px;
+  padding:25px;
+  margin-left: 10px;
+  margin-right: 10px;
+  border:1px double rgb(70, 5, 5);
+  background:white;
+  float: left;
+}
+#last{
+  width: 590px;
+  height: 250px;
+  padding:25px;
+ 
+  background:transparent;
+  float: left;
+  margin-left: 10px;
+}
+#inside{
+  min-width: 350px;
+  align-content: center;
+  height:25px;
+  top:5px;
+  padding:3px;
+  border:1px solid gray;
+}
+#bottom{
+  width: 400px;
+  height: 545px;
+  overflow-x: hidden;
+    overflow-y: scroll;
+  
+  margin-top:34px;
+  margin-right:25px;
+  padding: 10px;
+  /*box-shadow: 5px 10px 8px #888888;*/
+  float:left;
+  background-color: transparent;
+}
+#p-postings{
+  font-family:'Times New Roman', Times, serif;
+}
+
+form{
+  width:400px;
+  padding:5px;
+  float:left;
+}
+.list-group{
+  background:transparent;
+}
+.f1{
+  font-size: 14px;
+}
+/*postings----end of last page---*/
+
+/*============================Modal popup for genre===========================*/
+.modal {
+  display: none; /* Hidden by default */
+  position: fixed; /* Stay in place */
+  z-index: 1; /* Sit on top */
+  padding-top: 100px; /* Location of the box */
+  left: 0;
+  top: 0;
+  width: 100%; /* Full width */
+  height: 100%; /* Full height */
+  overflow: auto; /* Enable scroll if needed */
+  background-color: rgb(0,0,0); /* Fallback color */
+  background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+}
+
+/* Modal Content */
+.modal-content {
+  background-color: #fefefe;
+  margin: auto;
+  padding: 20px;
+  border: 1px solid #888;
+  width: 80%;
+}
+
+/* The Close Button */
+.close {
+  color: #aaaaaa;
+  float: right;
+  font-size: 28px;
+  font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+  color: #000;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+
+
+

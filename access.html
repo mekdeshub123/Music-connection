@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+            <title>Music Connecton</title>
+            <meta charset="utf-8">
+            <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=yes">
+            <link href = "https://fonts.google.com/css?selection.family=Noto+Serif" rel="stylesheet">
+            
+            <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+            <link rel="stylesheet" href="stylemu1.css">
+
+            
+            
+            
+    </head>
+    <body>
+        
+        <div class="topnav">
+               <span class="head1">COUNTERPOINT<i><font size="3px">....music connection</font></i></span>
+            <div class="topnav-right">
+               
+               <a href="index1000.html">Home</a>
+               <a href="about.html">About</a>
+               <a href="access.html" class="active">Access</a>
+               <a href="pstings.html">Postings</a>
+            </div>
+        </div>
+        <div id="home-container">
+           <!-- <div class="backg-full" ></div> -->
+            
+            <div id="form-container">
+                <form id="frm1">
+                    <legend>Start Your Profile</legend>
+                    <div class="form-group"> 
+                        <label for="Fname">First Name :</label> 
+                        <input id="Fname" type="text" class="form-control">
+                        <br>
+                        <label for="Lname">Last Name :</label>
+                        <input id="Lname" type="text" class="form-control">
+                        <br>
+                        <label for="Phone">Phone number :</label>
+                        <input id="Phone" type="text" class="form-control">
+                        <br>
+                        <label for="email">Email :</label>
+                        <input id="email" type="text" class="form-control">
+                        <div style="padding:5px; margin-top:10px; margin-bottom:10px;">
+                         <table width="100%">
+                            <tr>
+                              <td>
+                                  <div class="form-group">
+                                      <label for="change">Musician</label>
+                                      <select name="change" class="form-control" id="change">
+                                        <option value="-1">-select Genre-</option>
+                                        <option value="Rock">Rock</option>
+                                        <option  value="Jazz">Jazz</option>
+                                        <option value="Rythm & Blues">Rythm & Blues</option>
+                                        <option value="Country Music">Country Music</option>
+                                      </select>
+                                    </div>
+                              </td>
+                              <td>
+                                   <div class="form-group">
+                                      <label for="sel1">Customer</label>
+                                      <select class="form-control" id="sel2">
+                                      <option>-Client type-</option>
+                                      <option value="1">Individual</option>
+                                      <option>Organization</option>
+                                      </select>
+                                    </div>
+                              </td>
+                            </tr>
+                        
+                      </table>
+                      </div>
+                    
+
+                        <!--<label for="genera">Genera :</label></br>
+                        <textarea rows="3" cols="25" id="message"></textarea>-->
+                        <br>
+                        <button id="btn" class="btn btn-info">Submit</button>
+                    </div>
+                
+                </form>
+            </div>
+            <div id="mid-access"><p>
+              <img src="images/accessMid.PNG" width="350"/>
+              <figCaption><b><font size="5px">Sponsored by</font></b></bSponsored></figCaption>
+            </p></div>
+            <div id="login-music">
+              
+                <div class="form-group">
+                    <legend>Login</legend>
+                      <lebel for="username">Username or email :</label>
+                      <input type="text" name="username" class="form-control">
+                    </div>
+                    <div class="form-group">
+                      <label for="psw">Password:</label>
+                      <input type="password" name="psw" class="form-control">
+                    </div>
+                   
+                    <button id="btn2" class="btn btn-info" type="reset">Login</button>
+                </div>
+                  
+           <!--    Modal popup  -->
+           <div class="modal fade" tabindex="-1" role="dialog">
+              <div class="modal-dialog" role="document">
+                <div class="modal-content">
+                  <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                    <h4 class="modal-title">Modal title</h4>
+                  </div>
+                  <div class="modal-body">
+                    <p>One fine body&hellip;</p>
+                  </div>
+                  <div class="modal-footer">
+                    <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                    <button type="button" class="btn btn-primary">Save changes</button>
+                  </div>
+                </div><!-- /.modal-content -->
+              </div><!-- /.modal-dialog -->
+            </div><!-- /.modal -->
+            
+        
+        </div>  
+        <script src="https://code.jquery.com/jquery-3.4.1.js" integrity="sha256-WpOohJOqMqqyKL9FccASB9O0KwACQJpFTUBLTYOVvVU=" crossorigin="anonymous"></script>        
+<script>
+//Use the id of the form instead of #change
+      $('#change').change(function(){
+      //this is just getting the value that is selected
+      var title = $(this).val();
+      $('.modal-title').html(title);
+      $('.modal').modal('show');
+      });
+</script>        
+    </body>
+</html>
